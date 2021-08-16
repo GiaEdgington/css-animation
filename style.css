@@ -77,7 +77,9 @@
   
 /*BUTTON ANIMATION ENDS*/
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap");
+/*fill mode */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap");
 
 
 h2 {
@@ -97,23 +99,30 @@ h2 {
     100% {transform:scale(1);}
 }
 
-
-
-
-
-
-
-
-
-
 .wrap {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
-
+*/
 body {
   background-color: #433F55;
   margin:0;
 }
+
+
+
+.robot {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:3;
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes move {
+    100% {
+      transform: translateX(300%);
+    }
+  }
